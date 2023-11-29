@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario ULEAM</title>
+    <link rel="stylesheet" href="style-inventary.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Inventario ULEAM</h1>
+        <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    </header>
+
+     <!--agregar equipos  -->
+     <section id="Add">
+        <button onclick="abrirModal()">Nuevo equipo</button>
+    
+        <!-- Modal -->
+    <div class="modal" id="addEquipmentModal">
+        <div class="modal-content">
+            <label for="modalSerial">Número de Serie:</label>
+            <input type="text" id="modalSerial">
+
+            <label for="modalName">Nombre del Equipo:</label>
+            <input type="text" id="modalName">
+
+            <label for="modalType">Tipo de Equipo:</label>
+            <input type="text" id="modalType">
+
+            <label for="modalCantidad">Cantidad:</label>
+            <input type="text" id="modalCantidad">
+
+            <label for="modalFacultad">Facultad:</label>
+            <select id="modalFacultad" required>
+            <option value="Facultad de informatica">Facultad de informatica</option>
+            <option value="Facultad Comunición">Facultad Comunición</option>
+            <option value="Facultad Enfermeria">Facultad Enfermeria</option>
+            <!-- Agrega más opciones según sea necesario -->
+            </select>
+
+            <button  onclick="agregarEquipoFromModal()">Agregar Equipo</button>
+            <button onclick="cerrarModal()">Cancelar</button>
+        </div>
+    </div>
+    </section>
+
+
+        <section id="inventory-list">
+            <h2>Inventario Actual</h2>
+            <label for="facultadFilter">Filtrar por Facultad:</label>
+            <select id="facultadFilter" onchange="filtrarPorFacultad()">
+                <option value="todas">Todas las Facultades</option>
+                <option value="Facultad de informatica">Facultad de informatica</option>
+                <option value="Facultad Comunición">Facultad Comunición</option>
+                <option value="Facultad Enfermeria">Facultad Enfermeria</option>
+                  <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número de Serie</th>
+                        <th>Nombre del Equipo</th>
+                        <th>Tipo de Equipo</th>
+                        <th>Unidad</th>
+                        <th>Facultad</th>
+                        <th>Acciones</th>
+                        <!-- Agrega más encabezados según sea necesario -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irán las filas con datos del inventario -->
+                </tbody>
+            </table>
+        </section>
+
+   
+
+    <footer>
+        <p>&copy; 2023 Sistema de Inventario ULEAM</p>
+    </footer>
+</body>
+</html>

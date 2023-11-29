@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style-registro.css">
+    <script src="validar-registro.js" defer></script>
+</head>
+<body>
+    <section>
+
+        <form  id="formularioCliente" onsubmit="return validadregistro()">
+            <div>
+                <button id="atras" type="button" onclick="iratras()">Atras</button>
+            </div>
+            <div>
+                <label for="nombre">Nombre:<br></label>
+                <input id="nombre" name="nombre" type="text">
+                <div id="mensaje1"></div>
+            </div>
+            <div>
+                <label for="apellido">Apellido: <br></label>
+                <input id="apellido" name="apellido" type="text">
+                <div id="mensaje2"></div>
+            </div>
+            <div>
+                <label for="usuario">Usuario: <br></label>
+                <input id="usuario" name="usuario" type="text">
+                <div id="mensaje3"></div>
+            </div>
+            <div>
+                <label for="telefono">Telefono: <br></label>
+                <input id="telefono" name="telefono" type="text">
+                <div id="mensaje7"></div>
+            </div>
+            <div>
+                <label for="email">Correo: <br></label>
+                <input id="email" name="email" type="email">
+                <div id="mensaje4"></div>
+            </div>
+            <div>
+                <label for="contraseña">Nueva contraseña: <br></label>
+                <input id="contraseña" name="contraseña" type="password">
+                <div id="mensaje5"></div>
+            </div>
+            <div>
+                <label for="contraseña2">Confirmar contraseña: <br></label>
+                <input id="contraseña2" name="contraseña2" type="password">
+                <div id="mensaje6"></div>
+            </div>
+            <div id="botonregistro">
+                <button id="registrarse" type="submit">Registrarse</button>
+            </div>
+            <div id="mensaje8"></div>
+        </form>
+    </section>
+</body>
+</html>

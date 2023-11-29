@@ -1,0 +1,48 @@
+
+body {
+    background-image: url("images/ULEAM.JPG");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4; /* Color de fondo para el cuerpo de la página */
+}
+
+section {
+    background-color: #241c1ce1;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h1 {
+    color: #cabcbc; /* Color del texto del encabezado */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: rgb(17, 63, 63);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dfdada; /* Color de los enlaces */
+    font-weight: bold;
+    transition: color 0.3s; /* Efecto de transición para el color del texto */
+}
+
+nav a:hover {
+    color: #000000; /* Color del texto al pasar el ratón sobre los enlaces */
+}

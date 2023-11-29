@@ -1,0 +1,99 @@
+
+        body {
+            background-image: url("images/ULEAM.JPG");
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff7e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        label {
+            
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #241c1ce1;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #8b6d6de1;
+
+        }
+
+        
+       .regi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+       }
+        #registro{
+            
+            width: 50%;
+            background-color: rgba(51, 148, 55, 0.993);
+            color:black
+        }
+        
+        #registro:hover{
+           
+            background-color: rgba(36, 100, 38, 0.993);
+            color:rgb(196, 195, 195)
+        }
+
+
+        .porta{
+           
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            
+            
+        }
+
+        #regresar{
+            display: flex;
+            justify-content: center;
+            width: 15%;
+            background-color:rgba(51, 148, 55, 0.993);
+            color: rgb(255, 255, 255)
+        }
+        
+        #regresar:hover{
+            background-color: rgba(33, 99, 36, 0.993);
+            color:rgb(255, 255, 255)
+        }
+       
+        .inicio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
